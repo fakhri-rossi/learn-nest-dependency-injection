@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { PowerModule } from 'src/power/power.module';
+import { PowerService } from 'src/power/power.service';
 
 @Injectable()
 export class CpuService {
-  constructor(private powerModule: PowerModule) {}
+  constructor(private powerService: PowerService) {}
 }
